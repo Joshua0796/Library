@@ -1,0 +1,233 @@
+﻿@model Biblioteca
+
+@{
+    ViewData["Title"] = "Biblioteca Virtual";
+    Layout = "Simple";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>@ViewData["Title"]</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://localhost:44327/">@ViewData["Title"] </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" asp-area="" asp-controller="Biblioteca" asp-action="Index">
+                            Inicio
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Biblioteca" asp-action="About">
+                            About
+                        </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row text-center">
+            <h4> <strong>Listado de libros: </strong></h4>
+        </div>
+    </div>
+    
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Page Features -->
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="~/Images/descarga.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">El sol del amanecer</h4>
+                            <h7><strong>Descripcion: </strong></h7>
+                            <p class="card-text">La hermosa vista en un amanecer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://localhost:44327/Libro/Details" class="btn btn-primary">Mas informacion aqui...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="~/Images/La gran historia.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Vida, la gran historia</h4>
+                            <h7><strong>Descripcion: </strong></h7>
+                            <p class="card-text">El mayor viaje a la vida desde su aparición en la Tierra hasta hoy, contado por su mayor conocedor.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://localhost:44327/Libro/Details" class="btn btn-primary">Mas informacion aqui...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="~/Images/portada_la-conquista-de-america-contada-para-escepticos_juan-eslava-galan_201902281357.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">La conquista de América contada para escépticos</h4>
+                            <h7><strong>Descripcion: </strong></h7>
+                            <p class="card-text">En un alarde de estilo y maestría ya familiar para su gran público, Eslava Galán nos sumerge en la conquista de América y las apasionantes vidas de sus protagonistas.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://localhost:44327/Libro/Details" class="btn btn-primary">Mas informacion aqui...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="~/Images/portada_la-huella-del-mal_manuel-rios_201903251654.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">La huella del mal</h4>
+                            <h7><strong>Descripcion: </strong></h7>
+                            <p class="card-text">Un yacimiento mítico, un asesinato desconcertante, una pareja de investigadores con un pasado secreto.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://localhost:44327/Libro/Details" class="btn btn-primary">Mas informacion aqui...</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-bottom" src="~/Images/portada_la-vida-en-cuatro-letras_carlos-lopez-otin_201902041712.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">La vida en cuatro letras</h4>
+                        <h7><strong>Descripcion: </strong></h7>
+                        <p class="card-text">Carlos López-Otín, uno de los investigadores españoles de mayor relevancia internacional, nos propone un gran libro de divulgación científica para explicarnos los secretos del origen de la vida, el genoma humano y la lucha incansable de la humanidad para vencer la enfermedad y lograr la felicidad en la tierra.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://localhost:44327/Libro/Details" class="btn btn-primary">Mas informacion aqui...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="~/Images/portada_las-hijas-del-capitan_maria-duenas_201905041228.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Las hijas del Capitán</h4>
+                        <h7><strong>Descripcion: </strong></h7>
+                        <p class="card-text">Tres hermanas, dos mundos, una ciudad.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://localhost:44327/Libro/Details" class="btn btn-primary">Mas informacion aqui...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="~/Images/portada_si-esto-es-una-mujer_lorenzo-silva_201902261421.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Si esto es una mujer</h4>
+                        <h7><strong>Descripcion: </strong></h7>
+                        <p class="card-text">La nueva serie policial de Lorenzo Silva, junto a Noemí Trujillo, con una mujer como protagonista.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://localhost:44327/Libro/Details" class="btn btn-primary">Mas informacion aqui...</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="~/Images/portada_29-aventuras-que-debes-vivir_jorge-abian_201905091800.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">29 aventuras que debes vivir</h4>
+                        <h7><strong>Descripcion: </strong></h7>
+                        <p class="card-text">Este libro que cuenta 29 aventuras que debes vivir ayuda a que los viajeros disfruten de las mejores experiencias con facilidad.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://localhost:44327/Libro/Details" class="btn btn-primary">Mas informacion aqui...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="~/Images/portada_destroza-este-diario-ahora-a-todo-color_keri-smith_201705301830.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Destroza este diario. Ahora a todo color</h4>
+                        <h7><strong>Descripcion: </strong></h7>
+                        <p class="card-text">Vuelve Destroza este diario, el gran bestseller de Paidós, ahora a todo color: una edición especial que no dejará indiferente a nadie.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://localhost:44327/Libro/Details" class="btn btn-primary">Mas informacion aqui...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="~/Images/portada_el-puzle-de-cristal_blue-jeans_201902011856.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">El puzle de cristal</h4>
+                        <h7><strong>Descripcion: </strong></h7>
+                        <p class="card-text">La esperada 2ª parte de la Trilogía LA CHICA INVISIBLE. Todo empieza a encajar.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://localhost:44327/Libro/Details" class="btn btn-primary">Mas informacion aqui...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="~/Images/portada_mil-noches-sin-ti_federico-moccia_201904262200.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Mil noches sin ti</h4>
+                        <h7><strong>Descripcion: </strong></h7>
+                        <p class="card-text">Vuelve Federico Moccia con la segunda parte de Esta noche dime que me quieres. Sólo hace falta una noche para cambiarlo todo.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://localhost:44327/Libro/Details" class="btn btn-primary">Mas informacion aqui...</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Joshua Website 2019</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
