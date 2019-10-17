@@ -1,0 +1,110 @@
+﻿@model Biblioteca
+
+@{
+    ViewData["Title"] = "Biblioteca Virtual";
+    Layout = "Simple";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>@ViewData["Title"]</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://localhost:44327/"> @ViewData["Title"] </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Biblioteca" asp-action="Index">
+                            Inicio
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" asp-area="" asp-controller="Biblioteca" asp-action="About">
+                            About
+                        </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row text-left">
+            <p>
+                <h4> 
+                    <strong>
+                        Acerca de nosotros: 
+                    </strong>
+                </h4>
+            </p>
+        </div>
+    
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Page Features -->
+        <div class="row text-left">
+            <div class="col-lg-3 col-md-6 mb-4">>
+                    
+                <address>
+                     <p>
+                        Nombre: JRBiblioteca
+                    </p>
+                    <p>
+                        Dirección: Alma Rosa I
+                    </p>
+                    <p>
+                        País: Republica Dominicana
+                    </p>
+                    <p>
+                        Ciudad: Santo Domingo
+                    </p>
+                </address>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Joshua Website 2019</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
+
