@@ -7,7 +7,7 @@ namespace ProyectLibrary.Models
 {
     public class Libro
     {
-        public int LibroId { get; set; }
+        public int Id { get; set; }
         public string Nombre { get; set; }
         public string Description { get; set; }
         public DateTime Fecha { get; set; }
