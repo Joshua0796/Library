@@ -15,22 +15,22 @@ namespace ProyectLibrary.Models
 
 
         
-        public Biblioteca(string nombre, int ano) => (Nombre, AnoDeCreacion) = (nombre, ano);
+        //public Biblioteca(string nombre, int ano) => (Nombre, AnoDeCreacion) = (nombre, ano);
 
-        public Biblioteca(string nombre, int año,
-                       string pais = "", string ciudad = "") : base()
-        {
-            (Nombre, AnoDeCreacion) = (nombre, año);
-            Pais = pais;
-            Ciudad = ciudad;
-        }
-        public Biblioteca()
-        {
-        }
+        //public Biblioteca(string nombre, int año,
+        //               string pais = "", string ciudad = "") : base()
+        //{
+        //    (Nombre, AnoDeCreacion) = (nombre, año);
+        //    Pais = pais;
+        //    Ciudad = ciudad;
+        //}
+        //public Biblioteca()
+        //{
+        //}
         
-        public override string ToString()
-        {
-            return $"Nombre: \"{Nombre}\", Dirección: {Direccion}, Pais: {Pais}, Ciudad: {Ciudad}";
-        }
+        //public override string ToString()
+        //{
+        //    return $"Nombre: \"{Nombre}\", Dirección: {Direccion}, Pais: {Pais}, Ciudad: {Ciudad}";
+        //}
     }
 }
